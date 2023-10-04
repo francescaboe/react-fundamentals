@@ -19,11 +19,16 @@ function UsernameForm({onSubmitUsername}) {
 
   // 🐨 make sure to associate the label to the input.
   // to do so, set the value of 'htmlFor' prop of the label to the id of input
+
+    const handleSubmit = (e) => {
+        onSubmitUsername(e.target.elements.username.value)
+    }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div>
-        <label>Username:</label>
-        <input type="text" />
+        <label htmlFor="username">Username:</label>
+        <input type="text" id="username" />
       </div>
       <button type="submit">Submit</button>
     </form>
