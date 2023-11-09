@@ -21,6 +21,7 @@
 <hr />
 
 test
+test 2
 
 <!-- prettier-ignore-start -->
 [![Build Status][build-badge]][build]
